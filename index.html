@@ -190,16 +190,16 @@
     transition: background 0.3s, transform 0.2s;
     text-decoration: none; display: inline-block;
   }
-  .btn-primary:hover { background: #a0427a; transform: translateY(-2px); }
+  .btn-primary:hover { background: var(--pink); transform: translateY(-2px); }
   .btn-ghost {
-    background: transparent; color: var(--blush);
+    background: transparent; color: var(--pink);
     padding: 0.85rem 2.2rem;
     font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
-    border: 1px solid var(--blush); cursor: none;
+    border: 1px solid var(--pink); cursor: none;
     transition: border-color 0.3s, color 0.3s;
     text-decoration: none; display: inline-block;
   }
-  .btn-ghost:hover { border-color: var(--pink); color: var(--pink); }
+  .btn-ghost:hover { border-color: var(--pink); color: var(--pink); transform: translateY(-2px); }
 
   .hero-scroll-hint {
     position: absolute; bottom: 2.5rem; left: 4rem;
@@ -295,7 +295,7 @@
   .section-inner { max-width: 1200px; margin: 0 auto; }
 
   .section-label {
-    font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+    font-size: 0.9rem; letter-spacing: 0.25em; text-transform: uppercase;
     color: var(--charcoal); margin-bottom: 1rem;
   }
 
@@ -360,7 +360,7 @@
 
   /* ─── WHAT WE DO (dark section) ──────────────────────── */
   .dark-section {
-    background: var(--navy);
+    background: var(--pink);
     padding: 7rem 3rem;
     position: relative; overflow: hidden;
   }
@@ -372,7 +372,7 @@
     pointer-events: none;
   }
   .dark-inner { max-width: 1200px; margin: 0 auto; }
-  .dark-section .section-label { color: var(--pink); }
+  .dark-section .section-label { color: var(--navy); }
 
   .dark-section h2 {
     font-family: var(--font-display);
@@ -380,7 +380,7 @@
     font-weight: 300; color: var(--white);
     margin-bottom: 4rem; max-width: 600px; line-height: 1.2;
   }
-  .dark-section h2 em { font-style: italic; color: var(--pink); }
+  .dark-section h2 em { font-style: italic; color: var(--navy); }
 
   .services-grid {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
