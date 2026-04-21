@@ -423,10 +423,16 @@
   }
   .events-header h2 em { font-style: italic; color: var(--pink); }
 
-  .events-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1.5rem; }
+  .events-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1.5rem; overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    scrollbar-width: none; }
 
   .event-card {
     background: var(--white);
+    display: inline-block; /* Aligns children horizontally */
+    width: max-content;
     overflow: hidden;
     transition: transform 0.4s var(--ease-out), box-shadow 0.4s;
     cursor: none;
@@ -935,7 +941,7 @@
       <a href="#" class="about-link" style="color:var(--navy);margin-bottom:0.5rem;">View all events</a>
     </div>
 
-    <div class="events-grid reveal">
+    <div class="events-grid reveal" style="">
       <!-- Feature event -->
       <div class="event-card">
         <div class="event-card-img" style="background:linear-gradient(135deg,#210747 0%,var(--pink) 100%);">
@@ -1115,6 +1121,18 @@
     });
   }, { threshold: 0.12 });
   reveals.forEach(r => observer.observe(r));
+
+  // Scrollable events grid
+  const container = document.querySelector('.events-grid');
+
+  container.addEventListener('wheel', (e) => {
+    // Prevent vertical scrolling
+    e.preventDefault();
+    
+    // Scroll horizontally based on vertical wheel movement
+    // Adjust multiplier (e.g., 2) to change scroll speed
+    container.scrollLeft += e.deltaY * 1.5;
+  }, { passive: false });
 </script>
 </body>
 </html>
