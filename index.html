@@ -350,9 +350,17 @@
     line-height: 1;
     margin-bottom: 0.5rem;
   }
+  .craft-pill-header {
+    display: flex; align-items: left; gap: 1.2rem;
+    margin-bottom: 1rem;
+  }
   .craft-title {
     font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
     color: var(--navy); margin-bottom: 0.4rem; font-weight: 500;
+  }
+  .craft-image-container {
+    width: 125px; height: 125px; border-radius: 50%;
+    overflow: hidden; flex-shrink: 0;
   }
   .craft-desc {
     font-size: 0.8rem; color: #777; line-height: 1.6;
@@ -884,49 +892,96 @@
       </div>
       <div class="reveal"></div>
         <p style="font-family:'Cormorant Garamond',serif;font-size:3rem;color: var(--pink);font-weight:600;">Meet the team</p>
-        <img src="images/Profiles-4.png" alt="Meet the team">
+        <img src="images/Profiles.png" alt="Meet the team">
       </div>
       <div class="craft-pillars reveal">
         <div class="craft-pill">
-          <div class="craft-letter">Rumbie</div>
-          <div class="craft-title">14fashion Group</div>
-          <div class="craft-desc">Zimbabwean-British founder, researcher and Sales & Marketing Specialist. Rumbie holds a First-Class Law degree and MA Fashion Management with Marketing. Specialising in conscious fashion strategy and next-generation consumer behaviour, she founded 5 Ws of Fashion following original research with Lumbers Jewellers into hard luxury and Gen Z consumption.</div>
-        </div>
-        <div class="craft-pill">
-          <div class="craft-letter">Wijdane</div>
-          <div class="craft-title">Academic</div>
-          <div class="craft-desc">Moroccan-British fashion researcher specialising in heritage craft, Amazigh textile traditions, and digital cultural preservation. Wijdane designs technology-driven platforms supporting artisanal community empowerment, combining qualitative fieldwork with brand strategy. Her work bridges Indigenous North African textile heritage with contemporary sustainability discourse and consumer-facing cultural storytelling.</div>
-        </div>
-        <div class="craft-pill">
-          <div class="craft-letter">Namruthaa</div>
-          <div class="craft-title">Entrepreneur</div>
-          <div class="craft-desc">Bangalore-born fashion entrepreneur from a two-generation handloom textile family. Namruthaa specialises in circular fashion, vintage aesthetics, and heirloom-inspired design. Combining her BSc Fashion Design with an MA Fashion Management from De Montfort University, she is currently launching her own brand rooted in heritage craft and sustainable practice.</div>
-        </div>
-        <div class="craft-pill">
-          <div class="craft-letter">Samia</div>
-          <div class="craft-title">Academic &amp; Master</div>
-          <div class="craft-desc">Gulf-raised interdisciplinary researcher and creative strategist. Samia specialises in luxury fashion ethics, digital innovation, and symbolic value construction. Her MA research examined immersive technologies in prestige branding; her current PhD investigates property technology and value systems in rapidly developing markets. Also active as a volunteer creative director for fashion brands.</div>
-        </div>
-        <div class="craft-pill">
-          <div class="craft-letter">Mine</div>
-          <div class="craft-title">DMU Museum</div>
-          <div class="craft-desc">Turkish-British leather goods designer specialising in heritage craft and contemporary production. Mine's MA research explores Gen Z's role in reviving traditional leathercraft, with publication forthcoming. Currently a Junior Leather Goods Sample Maker for a leading UK belt supplier, and contributor to DMU Museum's Artefacts Live exhibition.</div>
-        </div>
-        <div class="craft-pill">
-          <div class="craft-letter">Adufe</div>
-          <div class="craft-title">Adufe Lagos</div>
-          <div class="craft-desc">Lagos-born fashion designer and founder of Adufe Lagos, Adufe specialises in African fashion strategy and international market positioning for emerging designers. Her postgraduate research at De Montfort University examines how African fashion brands navigate global systems, complemented by her 2025 Lumbers collaboration championing underrepresented fashion regions.</div>
-        </div>
-        <div class="craft-pill">
-          <div class="craft-letter">Manali</div>
-          <div class="craft-title">Ruii Clothing</div>
-          <div class="craft-desc">Mumbai-raised fashion designer and brand strategist with 8+ years across creative industries. Manali specialises in sustainable fashion and luxury brand management, combining design craft with strategic storytelling. Founder of childrenswear label Ruii Clothing, London Fashion Week alumna, and MSc Luxury Fashion Brand Management graduate from Nottingham Trent University.</div>
-        </div>
-        <div class="craft-pill">
-          <div class="craft-letter">Haven</div>
-          <div class="craft-title">Line Producer</div>
-          <div class="craft-desc">Birmingham-born model-turned-technologist bridging fashion and product development. Haven specialises in runway and e-commerce modelling for designer suits and knitwear, strategic partnerships for fit technology, and fashion event production. Line producer for 5 Ws of Fashion and New Business Director at Integrate, working across the UK Midlands creative sector.</div>
-        </div>
+    <div class="craft-pill-header">
+      <div class="craft-image-container"><img src="images/Profiles-1.png" alt="Rumbie"></div>
+      <div class="craft-letter-wrapper">
+        <div class="craft-letter">Rumbie</div>
+        <div class="craft-title">14fashion Group</div>
+      </div>
+    </div>
+    <div class="craft-desc">Zimbabwean-British founder, researcher and Sales & Marketing Specialist. Rumbie holds a First-Class Law degree and MA Fashion Management with Marketing. Specialising in conscious fashion strategy and next-generation consumer behaviour, she founded 5 Ws of Fashion following original research with Lumbers Jewellers into hard luxury and Gen Z consumption.</div>
+  </div>
+
+  <div class="craft-pill">
+    <div class="craft-pill-header">
+      <div class="craft-image-container"><img src="images/Profiles-2.png" alt="Wijdane"></div>
+      <div class="craft-letter-wrapper">
+        <div class="craft-letter">Wijdane</div>
+        <div class="craft-title">Academic</div>
+      </div>
+    </div>
+    <div class="craft-desc">Moroccan-British fashion researcher specialising in heritage craft, Amazigh textile traditions, and digital cultural preservation. Wijdane designs technology-driven platforms supporting artisanal community empowerment, combining qualitative fieldwork with brand strategy. Her work bridges Indigenous North African textile heritage with contemporary sustainability discourse and consumer-facing cultural storytelling.</div>
+  </div>
+
+  <div class="craft-pill">
+    <div class="craft-pill-header">
+      <div class="craft-image-container"><img src="images/Profiles-3.png" alt="Namruthaa"></div>
+      <div class="craft-letter-wrapper">
+        <div class="craft-letter">Namruthaa</div>
+        <div class="craft-title">Entrepreneur</div>
+      </div>
+    </div>
+    <div class="craft-desc">Bangalore-born fashion entrepreneur from a two-generation handloom textile family. Namruthaa specialises in circular fashion, vintage aesthetics, and heirloom-inspired design. Combining her BSc Fashion Design with an MA Fashion Management from De Montfort University, she is currently launching her own brand rooted in heritage craft and sustainable practice.</div>
+  </div>
+
+  <div class="craft-pill">
+    <div class="craft-pill-header">
+      <div class="craft-image-container"><img src="images/Profiles-4.png" alt="Samia"></div>
+      <div class="craft-letter-wrapper">
+        <div class="craft-letter">Samia</div>
+        <div class="craft-title">Academic &amp; Master</div>
+      </div>
+    </div>
+    <div class="craft-desc">Gulf-raised interdisciplinary researcher and creative strategist. Samia specialises in luxury fashion ethics, digital innovation, and symbolic value construction. Her MA research examined immersive technologies in prestige branding; her current PhD investigates property technology and value systems in rapidly developing markets. Also active as a volunteer creative director for fashion brands.</div>
+  </div>
+
+  <div class="craft-pill">
+    <div class="craft-pill-header">
+      <div class="craft-image-container"><img src="images/Profiles-5.png" alt="Mine"></div>
+      <div class="craft-letter-wrapper">
+        <div class="craft-letter">Mine</div>
+        <div class="craft-title">DMU Museum</div>
+      </div>
+    </div>
+    <div class="craft-desc">Turkish-British leather goods designer specialising in heritage craft and contemporary production. Mine's MA research explores Gen Z's role in reviving traditional leathercraft, with publication forthcoming. Currently a Junior Leather Goods Sample Maker for a leading UK belt supplier, and contributor to DMU Museum's Artefacts Live exhibition.</div>
+  </div>
+
+  <div class="craft-pill">
+    <div class="craft-pill-header">
+      <div class="craft-image-container"><img src="images/Profiles-6.png" alt="Adufe"></div>
+      <div class="craft-letter-wrapper">
+        <div class="craft-letter">Adufe</div>
+        <div class="craft-title">Adufe Lagos</div>
+      </div>
+    </div>
+    <div class="craft-desc">Lagos-born fashion designer and founder of Adufe Lagos, Adufe specialises in African fashion strategy and international market positioning for emerging designers. Her postgraduate research at De Montfort University examines how African fashion brands navigate global systems, complemented by her 2025 Lumbers collaboration championing underrepresented fashion regions.</div>
+  </div>
+
+  <div class="craft-pill">
+    <div class="craft-pill-header">
+      <div class="craft-image-container"><img src="images/Profiles-8.png" alt="Manali"></div>
+      <div class="craft-letter-wrapper">
+        <div class="craft-letter">Manali</div>
+        <div class="craft-title">Ruii Clothing</div>
+      </div>
+    </div>
+    <div class="craft-desc">Mumbai-raised fashion designer and brand strategist with 8+ years across creative industries. Manali specialises in sustainable fashion and luxury brand management, combining design craft with strategic storytelling. Founder of childrenswear label Ruii Clothing, London Fashion Week alumna, and MSc Luxury Fashion Brand Management graduate from Nottingham Trent University.</div>
+  </div>
+
+  <div class="craft-pill">
+    <div class="craft-pill-header">
+      <div class="craft-image-container"><img src="images/Profiles-7.png" alt="Haven"></div>
+      <div class="craft-letter-wrapper">
+        <div class="craft-letter">Haven</div>
+        <div class="craft-title">Line Producer</div>
+      </div>
+    </div>
+    <div class="craft-desc">Birmingham-born model-turned-technologist bridging fashion and product development. Haven specialises in runway and e-commerce modelling for designer suits and knitwear, strategic partnerships for fit technology, and fashion event production. Line producer for 5 Ws of Fashion and New Business Director at Integrate, working across the UK Midlands creative sector.</div>
+  </div>
     </div>
   </div>
 </section>
